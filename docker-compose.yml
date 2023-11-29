@@ -1,0 +1,10 @@
+services:
+
+### minipaint #################################################
+    minipaint:
+      build:
+        context: ./minipaint
+      restart: always
+      ports:
+        - "180:8080"
+      network_mode: host
